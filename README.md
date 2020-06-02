@@ -1,3 +1,14 @@
+## http://adisher-react.surge.sh/
+
+First create a project on local machine then create a react app. View it in browser. Publish it on github and surge. Create a workflow.
+
+- Error(Solved): Resolve the bug by adding a new object run and assign yarn to it after installing yarn
+`run: yarn`
+
+#### Explanation: I've observed that on local machine, yarn installation generates some warnings related to certain packages that are not included in windows. Why? researching it says these packages are not part of windows installation so yarn excludes them. But on the other side, in github actions we are running it on vm that operates ubuntu. First it installs yarn packages, but skips some of them. Executing yarn resolves these issues and runs the workflow successfully.
+
+Following script is Auto - Generated
+ 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -24,7 +35,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
-
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn eject`
