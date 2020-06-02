@@ -5,10 +5,8 @@ import App from './App';
 // import Hello from './components/hello';
 import * as serviceWorker from './serviceWorker';
 
-const root = <App />
-
 ReactDOM.render(
-  root,
+  <App />,
   document.getElementById('root')
 );
 
