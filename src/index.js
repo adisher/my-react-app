@@ -7,7 +7,7 @@ function Hi(props) {
         <div>
             <strong>Hello from {props.name}</strong>
             <h1>Adil</h1>
-            <h6>Adil</h6>
+            <h3>Adil</h3>
             {5 + 10}
         </div>
     );
